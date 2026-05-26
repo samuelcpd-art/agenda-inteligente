@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <header>
+        <h1>Agenda Inteligente</h1>
+        <button id="theme-toggle">🌙 Modo Escuro</button>
+        <button id="logout-btn" class="hidden">Sair</button>
+    </header>
+
+    <main>
+        <section id="auth-section" class="card">
+            <h2 id="auth-title">Entrar</h2>
+            <form id="auth-form">
+                <input type="email" id="email" placeholder="Seu e-mail" required>
+                <input type="password" id="password" placeholder="Sua senha" required>
+                <button type="submit" id="auth-submit">Entrar</button>
+            </form>
+            <p class="toggle-auth">Não tem conta? <span id="switch-auth">Registre-se</span></p>
+        </section>
+
+        <section id="app-section" class="hidden">
+            <form id="task-form" class="card">
+                <input type="text" id="task-title" placeholder="Nova tarefa..." required>
+                <input type="date" id="task-date">
+                <button type="submit">Adicionar</button>
+            </form>
+
+            <ul id="task-list">
+                </ul>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
