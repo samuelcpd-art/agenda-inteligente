@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Agenda Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Agenda Inteligente</h2>
+        <form id="auth-form">
+            <input type="email" id="email" placeholder="Seu E-mail" required>
+            <input type="password" id="password" placeholder="Sua Senha" required>
+            
+            <button type="submit" id="btn-login" class="btn-primary">Entrar</button>
+            <button type="button" id="btn-register" class="btn-secondary">Registrar nova conta</button>
+        </form>
+        <p id="auth-msg" style="text-align: center; margin-top: 10px; color: var(--danger);"></p>
+    </div>
+
+    <script type="module" src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-actions">
+            <button id="theme-toggle" class="btn-secondary" style="width: auto; padding: 6px 12px;">🌓 Tema</button>
+            <button id="logout-btn" class="btn-danger" style="width: auto; padding: 6px 12px; color: white;">Sair</button>
+        </div>
+        
+        <h1>Minha Agenda</h1>
+        
+        <form class="task-form" id="task-form">
+            <input type="text" id="task-input" placeholder="O que você precisa fazer?" required>
+            <button type="submit" class="btn-primary">Adicionar</button>
+        </form>
+
+        <ul class="task-list" id="task-list">
+            </ul>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
